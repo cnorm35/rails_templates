@@ -100,7 +100,7 @@ remove_file 'app/views/pages/home.html.erb'
 create_file 'app/views/pages/home.html.erb' do <<-TEXT
 <div class="jumbotron center">
   <h1>Polymorphic Users with Devise</h1>
-  <p<%= link_to "Post", 'http://codebycodes.com/blog/2016/05/30/creating-polymorphic-users-with-devise-and-rails/' %></p>
+  <p><a href="http://codebycodes.com/blog/2016/05/30/creating-polymorphic-users-with-devise-and-rails/">Back To Post</a></p>
   <h4><%= link_to 'Sign Up', new_user_registration_path %></h4>
 </div>
 TEXT
@@ -324,4 +324,5 @@ generate 'simple_form:install --bootstrap'
 git :init
 git add: '.'
 git commit: "-a -m 'Initial commit'"
+
 
